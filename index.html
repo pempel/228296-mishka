@@ -55,7 +55,7 @@
     <article class="featured-product">
       <header class="featured-product__header">
         <h1 class="featured-product__title">Вязаные корзинки</h1>
-        <b class="featured-product__badge">Товар недели</b>
+        <span class="featured-product__badge">Товар недели</span>
       </header>
       <p class="featured-product__description">
         Экологически чистая пряжа, ручная работа.
@@ -78,7 +78,7 @@
       <div class="featured-product__photo-wrapper">
         <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
       </div>
-      <p class="featured-product__price">Цена: 990 руб.</p>
+      <span class="featured-product__price">Цена: 990 руб.</span>
       <a class="featured-product__button" href="#">Заказать</a>
     </article>
 
@@ -118,8 +118,8 @@
             набирают больше лайков!
           </p>
           <footer class="comment__author">
-            <p class="comment__author-name">Анастасия Красильникова</p>
-            <p class="comment__author-nickname">@misssssiskras</p>
+            <span class="comment__author-name">Анастасия Красильникова</span>
+            <span class="comment__author-nickname">@misssssiskras</span>
           </footer>
         </article>
       </div>
@@ -132,16 +132,16 @@
 
     <section class="contacts">
       <h1 class="contacts__header">Контакты</h1>
-      <table class="contacts__fields">
-        <tr>
-          <td class="contacts__field-title">e-mail:</td>
-          <td class="contacts__field-value">info@mimimishkashop.ru</td>
-        </tr>
-        <tr>
-          <td class="contacts__field-title">адрес:</td>
-          <td class="contacts__field-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
-        </tr>
-      </table>
+      <div class="contacts__fields">
+        <div>
+          <span class="contacts__field-title">e-mail:</span>
+          <span class="contacts__field-value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></span>
+        </div>
+        <div>
+          <span class="contacts__field-title">адрес:</span>
+          <span class="contacts__field-value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+        </div>
+      </div>
       <div class="contacts__map-wrapper">
         <img src="http://placehold.it/320x457" width="320" height="457" alt="Карта">
       </div>
@@ -149,15 +149,15 @@
     </section>
 
     <footer class="page-footer">
-      <section class="page-footer__social-links">
+      <div class="page-footer__social-links">
         <a class="page-footer__social-link  page-footer__social-link--instagram">Instagram</a>
         <a class="page-footer__social-link  page-footer__social-link--facebook">Facebook</a>
         <a class="page-footer__social-link  page-footer__social-link--twitter">Twitter</a>
-      </section>
-      <section class="page-footer__copyright">
-        <b>Разработано</b>
+      </div>
+      <div class="page-footer__copyright">
+        <span>Разработано</span>
         <a href="#">HTML Academy</a>
-      </section>
+      </div>
     </footer>
 
     <div class="modal">
