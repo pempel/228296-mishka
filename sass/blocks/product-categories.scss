@@ -1,0 +1,32 @@
+.product-categories {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  &__title {
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 30px;
+    color: #010000;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #ffffff;
+
+    background-color: #63d1bb;
+
+    &--dark {
+      background-color: #56c3b2;
+    }
+  }
+}

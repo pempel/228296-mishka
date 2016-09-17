@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -11,7 +12,7 @@
       </div>
       <nav class="site-menu  site-menu--closed">
         <button class="site-menu__toggle" type="button">Открыть меню</button>
-        <ul class="site-menu__items">
+        <ul class="site-menu__list">
           <li class="site-menu__item">
             <a class="site-menu__link" href="#">
               Каталог товаров
@@ -37,7 +38,7 @@
     </header>
 
     <section class="product-categories">
-      <h1 class="product-categories__header">Милые штуки ручной работы для дома</h1>
+      <h1 class="product-categories__title">Милые штуки ручной работы для дома</h1>
       <ul class="product-categories__list">
         <li class="product-categories__item">
           <a class="product-categories__link  product-categories__link--lamp-icon" href="#">
@@ -45,7 +46,7 @@
           </a>
         </li>
         <li class="product-categories__item">
-          <a class="product-categories__link  product-categories__link--lego-icon" href="#">
+          <a class="product-categories__link  product-categories__link--lego-icon  product-categories__link--dark" href="#">
             Детские игрушки
           </a>
         </li>
@@ -55,7 +56,7 @@
     <article class="featured-product">
       <header class="featured-product__header">
         <h1 class="featured-product__title">Вязаные корзинки</h1>
-        <span class="featured-product__badge">Товар недели</span>
+        <span class="featured-product__subtitle">Товар недели</span>
       </header>
       <p class="featured-product__description">
         Экологически чистая пряжа, ручная работа.
@@ -79,35 +80,35 @@
         <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
       </div>
       <span class="featured-product__price">Цена: 990 руб.</span>
-      <a class="featured-product__button" href="#">Заказать</a>
+      <a class="featured-product__link" href="#">Заказать</a>
     </article>
 
     <section class="about-us">
-      <h1 class="about-us__header">Коротко о нас:</h1>
-      <ul class="about-us__features">
-        <li class="about-us__feature  about-us__feature--flower-icon">
+      <h1 class="about-us__title">Коротко о нас:</h1>
+      <ul class="about-us__list">
+        <li class="about-us__item  about-us__item--flower-icon">
           Экологически чистые материалы
         </li>
-        <li class="about-us__feature  about-us__feature--money-icon">
+        <li class="about-us__item  about-us__item--money-icon">
           Скандинавский стиль по российской цене
         </li>
-        <li class="about-us__feature  about-us__feature--heart-icon">
+        <li class="about-us__item  about-us__item--heart-icon">
           Увеличивает лайки на фотографиях
         </li>
-        <li class="about-us__feature  about-us__feature--knot-icon">
+        <li class="about-us__item  about-us__item--knot-icon">
           Связано вручную с любовью и умилением
         </li>
-        <li class="about-us__feature  about-us__feature--rocket-icon">
+        <li class="about-us__item  about-us__item--rocket-icon">
           Поддержка отечественного производителя
         </li>
-        <li class="about-us__feature  about-us__feature--gift-icon">
+        <li class="about-us__item  about-us__item--gift-icon">
           Поставляется в подарочной упаковке
         </li>
       </ul>
     </section>
 
     <section class="feedback">
-      <h1 class="feedback__header">Отзывы</h1>
+      <h1 class="feedback__title">Отзывы</h1>
       <div class="feedback__comments">
         <article class="comment">
           <p class="comment__text">
@@ -127,11 +128,11 @@
         <button class="feedback__control  feedback__control--prev" type="button">Назад</button>
         <button class="feedback__control  feedback__control--next" type="button">Вперед</button>
       </div>
-      <a class="feedback__button" href="#">Написать</a>
+      <a class="feedback__link" href="#">Написать</a>
     </section>
 
     <section class="contacts">
-      <h1 class="contacts__header">Контакты</h1>
+      <h1 class="contacts__title">Контакты</h1>
       <div class="contacts__fields">
         <div>
           <span class="contacts__field-title">e-mail:</span>
@@ -145,7 +146,7 @@
       <div class="contacts__map-wrapper">
         <img src="http://placehold.it/320x457" width="320" height="457" alt="Карта">
       </div>
-      <a class="contacts__button" href="#">Напишите нам</a>
+      <a class="contacts__link" href="#">Напишите нам</a>
     </section>
 
     <footer class="page-footer">
@@ -155,13 +156,15 @@
         <a class="page-footer__social-link  page-footer__social-link--twitter">Twitter</a>
       </div>
       <div class="page-footer__copyright">
-        <span>Разработано</span>
-        <a href="#">HTML Academy</a>
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a href="http://htmlacademy.ru">
+          <img src="img/htmlacademy.svg" width="27" height="34">
+        </a>
       </div>
     </footer>
 
     <div class="modal">
-      <h2 class="modal__header">Добавить в корзину</h2>
+      <h2 class="modal__title">Добавить в корзину</h2>
       <div class="modal__content">
         <div class="product-sizes">
           <p class="product-sizes__title">Выберите размер:</p>
@@ -170,7 +173,7 @@
             <li class="product-sizes__item">M</li>
             <li class="product-sizes__item">L</li>
           </ul>
-          <a class="product-sizes__button" href="#">Добавить</a>
+          <a class="product-sizes__link" href="#">Добавить</a>
         </div>
       </div>
     </div>

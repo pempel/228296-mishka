@@ -1,0 +1,21 @@
+.about-us {
+  &__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    font-weight: bold;
+    font-size: 17px;
+    color: #000000;
+  }
+}

@@ -1,0 +1,16 @@
+.site-menu {
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #000000;
+  }
+}

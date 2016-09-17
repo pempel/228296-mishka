@@ -1,0 +1,32 @@
+.featured-product {
+  &__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  &__subtitle {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #63d1bb;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: inherit;
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+  }
+}

@@ -1,0 +1,17 @@
+.feedback {
+  &__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+  }
+}
