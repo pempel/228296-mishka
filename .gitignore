@@ -6,5 +6,6 @@
 *.psd
 *.sublime*
 css/*.css
+!css/normalize.css
 node_modules/
 Thumbs.db
