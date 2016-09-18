@@ -3,10 +3,10 @@
   background-repeat: no-repeat;
 
   &__title {
-    font-weight: bold;
+    font-family: $font-family-bold;
     font-size: 27px;
     line-height: 30px;
-    color: #010000;
+    color: $palette-text-bold;
   }
 
   &__list {
@@ -17,16 +17,16 @@
   }
 
   &__link {
-    font-weight: bold;
+    font-family: $font-family-bold;
     font-size: 19px;
     line-height: 24px;
     text-decoration: none;
-    color: #ffffff;
+    color: $palette-secondary-light;
 
-    background-color: #63d1bb;
+    background-color: $palette-primary-light;
 
     &--dark {
-      background-color: #56c3b2;
+      background-color: $palette-primary-dark;
     }
   }
 }

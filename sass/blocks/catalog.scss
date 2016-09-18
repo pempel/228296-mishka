@@ -2,8 +2,8 @@
   &__title {
     font-size: 27px;
     line-height: 30px;
-    color: #000000;
+    color: $palette-text-bold;
 
-    background-color: #f1f1f1;
+    background-color: $palette-secondary-dark;
   }
 }

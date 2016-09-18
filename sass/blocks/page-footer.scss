@@ -1,10 +1,10 @@
 .page-footer {
-  background-color: #f1f1f1;
+  background-color: $palette-secondary-dark;
 
   &__copyright-text {
-    font-weight: bold;
+    font-family: $font-family-bold;
     font-size: 19px;
     line-height: 18px;
-    color: #000000;
+    color: $palette-text-bold;
   }
 }

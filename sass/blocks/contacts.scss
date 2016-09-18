@@ -1,9 +1,9 @@
 .contacts {
   &__title {
-    font-weight: bold;
+    font-family: $font-family-bold;
     font-size: 18px;
     line-height: 30px;
-    color: #000000;
+    color: $palette-text-bold;
   }
 
   &__field-title {
@@ -14,17 +14,17 @@
   &__field-value {
     font-size: 15px;
     line-height: 30px;
-  }
 
-  &__field-value a {
-    text-decoration: none;
-    color: inherit;
+    a {
+      text-decoration: none;
+      color: inherit;
 
-    border-bottom: 1px solid #62d1ba;
+      border-bottom: 1px solid #62d1ba;
+    }
   }
 
   &__link {
-    font-weight: bold;
+    font-family: $font-family-bold;
     font-size: 18px;
     line-height: 16px;
     text-decoration: none;

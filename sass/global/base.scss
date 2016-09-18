@@ -1,8 +1,9 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-family-normal;
+  font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #444444;
+  color: $palette-text;
 
-  background-color: #ffffff;
+  background-color: $palette-secondary-light;
 }

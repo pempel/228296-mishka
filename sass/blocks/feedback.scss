@@ -1,13 +1,13 @@
 .feedback {
   &__title {
-    font-weight: bold;
+    font-family: $font-family-bold;
     font-size: 25px;
     line-height: 30px;
-    color: #000000;
+    color: $palette-text-bold;
   }
 
   &__link {
-    font-weight: bold;
+    font-family: $font-family-bold;
     font-size: 18px;
     line-height: 16px;
     text-decoration: none;

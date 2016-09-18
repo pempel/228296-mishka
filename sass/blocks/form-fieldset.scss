@@ -1,9 +1,9 @@
 .form-fieldset {
   &__title {
-    font-weight: bold;
+    font-family: $font-family-bold;
     font-size: 17px;
     line-height: 16px;
     text-transform: uppercase;
-    color: #63d1bb;
+    color: $palette-primary-light;
   }
 }

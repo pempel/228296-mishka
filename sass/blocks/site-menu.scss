@@ -7,10 +7,10 @@
   }
 
   &__link {
-    font-weight: bold;
+    font-family: $font-family-bold;
     font-size: 17px;
     line-height: 24px;
     text-decoration: none;
-    color: #000000;
+    color: $palette-text-bold;
   }
 }

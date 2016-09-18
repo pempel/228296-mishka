@@ -1,0 +1,16 @@
+$x-palette-black: #000000;
+$x-palette-gray-dark: #444444;
+$x-palette-gray-light: #f1f1f1;
+$x-palette-green-dark: #56c3b2;
+$x-palette-green-light: #63d1bb;
+$x-palette-white: #ffffff;
+
+$palette-primary-dark: $x-palette-green-dark;
+$palette-primary-light: $x-palette-green-light;
+$palette-secondary-dark: $x-palette-gray-light;
+$palette-secondary-light: $x-palette-white;
+$palette-text-bold: $x-palette-black;
+$palette-text: $x-palette-gray-dark;
+
+$font-family-normal: "Open Sans", "Arial", sans-serif;
+$font-family-bold: "Open Sans Bold", "Arial", sans-serif;
