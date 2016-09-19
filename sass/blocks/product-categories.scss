@@ -1,0 +1,32 @@
+.product-categories {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  &__title {
+    font-family: $font-family-bold;
+    font-size: 27px;
+    line-height: 30px;
+    color: $palette-text-bold;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__link {
+    font-family: $font-family-bold;
+    font-size: 19px;
+    line-height: 24px;
+    text-decoration: none;
+    color: $palette-secondary-light;
+
+    background-color: $palette-primary-light;
+
+    &--dark {
+      background-color: $palette-primary-dark;
+    }
+  }
+}

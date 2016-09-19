@@ -1,0 +1,34 @@
+.contacts {
+  &__title {
+    font-family: $font-family-bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: $palette-text-bold;
+  }
+
+  &__field-title {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  &__field-value {
+    font-size: 15px;
+    line-height: 30px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      border-bottom: 1px solid #62d1ba;
+    }
+  }
+
+  &__link {
+    font-family: $font-family-bold;
+    font-size: 18px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+  }
+}

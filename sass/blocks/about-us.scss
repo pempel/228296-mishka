@@ -1,0 +1,22 @@
+.about-us {
+  &__title {
+    font-family: $font-family-bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: $palette-text-bold;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    font-family: $font-family-bold;
+    font-size: 17px;
+    line-height: 1;
+    color: $palette-text-bold;
+  }
+}

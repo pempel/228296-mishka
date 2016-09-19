@@ -1,0 +1,30 @@
+.order {
+  &__title {
+    font-size: 27px;
+    line-height: 30px;
+    color: $palette-text-bold;
+
+    background-color: $palette-secondary-dark;
+  }
+
+  &__instructions {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  &__form-note {
+    font-size: 14px;
+    line-height: 5.24px;
+  }
+
+  &__form-button {
+    font-family: $font-family-bold;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    background-color: $palette-secondary-light;
+    border: 0;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,20 @@
+.product {
+  &__title {
+    font-family: $font-family-bold;
+    font-size: 17px;
+    line-height: 24px;
+    color: $palette-text-bold;
+  }
+
+  &__description {
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  &__price {
+    font-family: $font-family-bold;
+    font-size: 15px;
+    line-height: 24px;
+    color: $palette-text-bold;
+  }
+}
