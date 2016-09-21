@@ -1,0 +1,15 @@
+body {
+  // GRID ONLY {
+  background-image: url("../img/bg-index-1-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @media #{$tablet} {
+    background-image: url("../img/bg-index-2-tablet.png");
+  }
+
+  @media #{$desktop} {
+    background-image: url("../img/bg-index-3-desktop.png");
+  }
+  // }
+}

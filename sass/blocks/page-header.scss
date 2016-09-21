@@ -1,0 +1,15 @@
+.page-header {
+  // GRID ONLY {
+  min-height: 79px;
+
+  outline: 1px solid red;
+  // }
+}
+
+@media #{$tablet} {
+  .page-header {
+    // GRID ONLY {
+    min-height: 88px;
+    // }
+  }
+}
