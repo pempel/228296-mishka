@@ -2,6 +2,10 @@
   width: 320px;
   margin: 0 auto;
 
+  // GRID ONLY {
+  outline: 1px solid blue;
+  // }
+
   @media #{$tablet} {
     width: 668px;
   }
@@ -9,4 +13,18 @@
   @media #{$desktop} {
     width: 1050px;
   }
+}
+
+@mixin button() {
+  padding: 17px 0;
+
+  font-family: $font-family-bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+
+  border: 2px solid $palette-text;
 }
