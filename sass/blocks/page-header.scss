@@ -1,13 +1,27 @@
 .page-header {
   // GRID ONLY {
-  min-height: 79px;
-
   background-color: rgba(255, 255, 0, 0.4);
   outline: 1px solid red;
   // }
 }
 
-@media #{$tablet} {
+@media #{$mobile-only} {
+  .page-header {
+    // GRID ONLY {
+    min-height: 79px;
+    // }
+  }
+}
+
+@media #{$tablet-only} {
+  .page-header {
+    // GRID ONLY {
+    min-height: 88px;
+    // }
+  }
+}
+
+@media #{$desktop-only} {
   .page-header {
     // GRID ONLY {
     min-height: 88px;

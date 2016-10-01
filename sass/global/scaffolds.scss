@@ -1,15 +1,30 @@
 body {
   // GRID ONLY {
-  background-image: url("../img/bg-index-1-mobile.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
-
-  @media #{$tablet} {
-    background-image: url("../img/bg-index-2-tablet.png");
-  }
-
-  @media #{$desktop} {
-    background-image: url("../img/bg-index-3-desktop.png");
-  }
   // }
+}
+
+@media #{$mobile-only} {
+  body {
+    // GRID ONLY {
+    background-image: url("../img/scaffold-index-1-mobile.png");
+    // }
+  }
+}
+
+@media #{$tablet-only} {
+  body {
+    // GRID ONLY {
+    background-image: url("../img/scaffold-index-2-tablet.png");
+    // }
+  }
+}
+
+@media #{$desktop-only} {
+  body {
+    // GRID ONLY {
+    background-image: url("../img/scaffold-index-3-desktop.png");
+    // }
+  }
 }

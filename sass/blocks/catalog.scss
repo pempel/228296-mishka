@@ -1,9 +1,7 @@
-.catalog {
-  &__title {
-    font-size: 27px;
-    line-height: 30px;
-    color: $palette-text-bold;
+.catalog__title {
+  font-size: 27px;
+  line-height: 30px;
+  color: $palette-text-bold;
 
-    background-color: $palette-secondary-dark;
-  }
+  background-color: $palette-secondary-dark;
 }

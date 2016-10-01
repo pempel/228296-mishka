@@ -1,22 +1,24 @@
 $x-palette-black: #000000;
-$x-palette-gray-dark: #444444;
+$x-palette-gray-darker: #444444;
+$x-palette-gray-dark: #e5e5e5;
 $x-palette-gray-light: #ececec;
 $x-palette-gray-lighter: #f1f1f1;
 $x-palette-green-dark: #56c3b2;
 $x-palette-green-light: #63d1bb;
 $x-palette-white: #ffffff;
 
-$palette-border: $x-palette-gray-light;
+$palette-border-dark: $x-palette-gray-dark;
+$palette-border-light: $x-palette-gray-light;
 $palette-primary-dark: $x-palette-green-dark;
 $palette-primary-light: $x-palette-green-light;
 $palette-secondary-dark: $x-palette-gray-lighter;
 $palette-secondary-light: $x-palette-white;
 $palette-text-bold: $x-palette-black;
-$palette-text: $x-palette-gray-dark;
+$palette-text: $x-palette-gray-darker;
 
 $font-family-bold: "Open Sans Bold", "Arial", sans-serif;
 $font-family: "Open Sans", "Arial", sans-serif;
 
-$mobile-only: "(max-width: 667px)";
-$tablet: "(min-width: 668px)";
-$desktop: "(min-width: 1150px)";
+$mobile-only: "(max-width: 767px)";
+$tablet-only: "(min-width: 768px) and (max-width: 1149px)";
+$desktop-only: "(min-width: 1150px)";

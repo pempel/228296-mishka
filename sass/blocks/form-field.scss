@@ -1,8 +1,6 @@
-.form-field {
-  &__label {
-    font-family: $font-family-bold;
-    font-size: 17px;
-    line-height: 18px;
-    color: $palette-text-bold;
-  }
+.form-field__label {
+  font-family: $font-family-bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: $palette-text-bold;
 }
