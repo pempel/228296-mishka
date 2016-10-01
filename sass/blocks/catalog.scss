@@ -1,7 +1,64 @@
+.catalog__container {
+  @include container-with-padding();
+}
+
 .catalog__title {
+  margin: 0;
+
+  font-family: $font-family-bold;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
   color: $palette-text-bold;
 
   background-color: $palette-secondary-dark;
+}
+
+@media #{$mobile-only} {
+  .catalog__title {
+    padding-top: 70px;
+    padding-bottom: 76px;
+  }
+
+  .catalog__products {
+    // GRID ONLY {
+    min-height: 1237px;
+    // }
+  }
+}
+
+@media #{$tablet-only} {
+  .catalog__title {
+    padding-top: 96px;
+    padding-bottom: 79px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .catalog__products {
+    // GRID ONLY {
+    min-height: 1189px;
+    // }
+  }
+}
+
+@media #{$desktop-only} {
+  .catalog__title {
+    padding-top: 96px;
+    padding-bottom: 101px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .catalog__products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    // GRID ONLY {
+    min-height: 787px;
+    // }
+  }
 }

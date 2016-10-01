@@ -6,25 +6,43 @@ body {
 }
 
 @media #{$mobile-only} {
+  // GRID ONLY {
   body {
-    // GRID ONLY {
-    background-image: url("../img/scaffold-index-1-mobile.png");
-    // }
+    &.body-index {
+      background-image: url("../img/scaffold-index-1-mobile.png");
+    }
+
+    &.body-catalog {
+      background-image: url("../img/scaffold-catalog-1-mobile.png");
+    }
   }
+  // }
 }
 
 @media #{$tablet-only} {
+  // GRID ONLY {
   body {
-    // GRID ONLY {
-    background-image: url("../img/scaffold-index-2-tablet.png");
-    // }
+    &.body-index {
+      background-image: url("../img/scaffold-index-2-tablet.png");
+    }
+
+    &.body-catalog {
+      background-image: url("../img/scaffold-catalog-2-tablet.png");
+    }
   }
+  // }
 }
 
 @media #{$desktop-only} {
+  // GRID ONLY {
   body {
-    // GRID ONLY {
-    background-image: url("../img/scaffold-index-3-desktop.png");
-    // }
+    &.body-index {
+      background-image: url("../img/scaffold-index-3-desktop.png");
+    }
+
+    &.body-catalog {
+      background-image: url("../img/scaffold-catalog-3-desktop.png");
+    }
   }
+  // }
 }
