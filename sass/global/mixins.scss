@@ -1,0 +1,55 @@
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+
+  // GRID ONLY {
+  outline: 1px solid blue;
+  // }
+
+  @media #{$tablet-only} {
+    width: 768px;
+  }
+
+  @media #{$desktop-only} {
+    width: 1150px;
+  }
+}
+
+@mixin container-with-padding {
+  width: 260px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  // GRID ONLY {
+  outline: 1px solid blue;
+  // }
+
+  @media #{$tablet-only} {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media #{$desktop-only} {
+    width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@mixin button() {
+  display: block;
+  padding: 16px 0;
+
+  font-family: $font-family-bold;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+
+  background-color: inherit;
+  border: 2px solid $palette-text;
+}

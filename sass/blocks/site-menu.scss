@@ -1,16 +1,14 @@
-.site-menu {
-  &__list {
-    margin: 0;
-    padding: 0;
+.site-menu__list {
+  margin: 0;
+  padding: 0;
 
-    list-style: none;
-  }
+  list-style: none;
+}
 
-  &__link {
-    font-family: $font-family-bold;
-    font-size: 17px;
-    line-height: 24px;
-    text-decoration: none;
-    color: $palette-text-bold;
-  }
+.site-menu__link {
+  font-family: $font-family-bold;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $palette-text-bold;
 }

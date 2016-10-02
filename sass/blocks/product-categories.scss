@@ -1,32 +1,112 @@
 .product-categories {
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  // GRID ONLY {
+  outline: 1px solid red;
+  // }
+}
 
-  &__title {
-    font-family: $font-family-bold;
-    font-size: 27px;
-    line-height: 30px;
-    color: $palette-text-bold;
+.product-categories__content {
+  position: relative;
+}
+
+.product-categories__title {
+  margin: 0;
+
+  font-family: $font-family-bold;
+  font-size: 27px;
+  line-height: 30px;
+  color: $palette-text-bold;
+}
+
+.product-categories__list {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-categories__link {
+  display: block;
+
+  font-family: $font-family-bold;
+  font-size: 19px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $palette-secondary-light;
+
+  background-color: $palette-primary-light;
+
+  &--dark {
+    background-color: $palette-primary-dark;
+  }
+}
+
+@media #{$mobile-only} {
+  .product-categories {
+    margin-top: -18px;
   }
 
-  &__list {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
+  .product-categories__container {
+    @include container();
   }
 
-  &__link {
-    font-family: $font-family-bold;
-    font-size: 19px;
-    line-height: 24px;
-    text-decoration: none;
-    color: $palette-secondary-light;
+  .product-categories__content {
+    // GRID ONLY {
+    min-height: 506px;
+    // }
+  }
 
-    background-color: $palette-primary-light;
+  .product-categories__list {
+    display: flex;
+    flex-direction: column;
+  }
 
-    &--dark {
-      background-color: $palette-primary-dark;
-    }
+  .product-categories__item {
+    width: 100%;
+  }
+}
+
+@media #{$tablet-only} {
+  .product-categories__container {
+    @include container-with-padding();
+  }
+
+  .product-categories__content {
+    // GRID ONLY {
+    min-height: 745px;
+    // }
+  }
+
+  .product-categories__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product-categories__item {
+    width: 50%;
+  }
+}
+
+@media #{$desktop-only} {
+  .product-categories__container {
+    @include container-with-padding();
+  }
+
+  .product-categories__content {
+    // GRID ONLY {
+    min-height: 745px;
+    // }
+  }
+
+  .product-categories__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product-categories__item {
+    width: 50%;
   }
 }

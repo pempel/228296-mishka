@@ -1,17 +1,15 @@
-.product-sizes {
-  &__title {
-    font-size: 15px;
-    line-height: 30px;
-  }
+.product-sizes__title {
+  font-size: 15px;
+  line-height: 30px;
+}
 
-  &__link {
-    font-family: $font-family-bold;
-    font-size: 17px;
-    line-height: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $palette-secondary-light;
+.product-sizes__link {
+  font-family: $font-family-bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $palette-secondary-light;
 
-    background-color: $palette-primary-light;
-  }
+  background-color: $palette-primary-light;
 }

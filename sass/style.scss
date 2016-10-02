@@ -1,11 +1,14 @@
 @import "global/variables";
+@import "global/mixins";
 @import "global/typography";
 @import "global/base";
 
+@import "global/scaffolds";
+
 @import "blocks/about-us";
 @import "blocks/catalog";
-@import "blocks/comment";
 @import "blocks/contacts";
+@import "blocks/extra-menu";
 @import "blocks/featured-product";
 @import "blocks/feedback";
 @import "blocks/form-field";
@@ -13,6 +16,7 @@
 @import "blocks/modal";
 @import "blocks/order";
 @import "blocks/page-footer";
+@import "blocks/page-header";
 @import "blocks/product-categories";
 @import "blocks/product-sizes";
 @import "blocks/product";
