@@ -76,12 +76,12 @@
   }
 
   .product__summary {
-    width: 336px;
-    min-height: 334px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
+    width: 336px;
+    min-height: 334px;
   }
 
   .product__title-wrapper {
@@ -120,11 +120,11 @@
   }
 
   .product__summary {
-    min-height: 197px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
+    min-height: 197px;
   }
 
   .product__title-wrapper {
