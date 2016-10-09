@@ -4,38 +4,67 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
   </head>
   <body class="body-index">
-    <header class="page-header">
-      <!--<div class="page-header__logo-wrapper">
-        <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип">
-      </div>
-      <nav class="site-menu  site-menu--closed">
-        <button class="site-menu__toggle" type="button">Открыть меню</button>
+    <nav class="site-menu  site-menu--closed  site-menu--nojs">
+      <div class="site-menu__container">
         <ul class="site-menu__list">
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="#">
-              Каталог товаров
-            </a>
+          <li class="site-menu__item  site-menu__item--logo">
+            <div class="site-menu__item-container">
+              <div class="site-menu__item-content">
+                <a class="site-menu__link">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="http://placehold.it/149x72">
+                    <source media="(min-width: 768px)" srcset="http://placehold.it/113x46">
+                    <img class="site-menu__logo" src="http://placehold.it/86x35" alt="Логотип">
+                  </picture>
+                </a>
+                <button class="site-menu__toggle" type="button">Открыть меню</button>
+              </div>
+            </div>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="#">
-              Вязание на заказ
-            </a>
+          <li class="site-menu__item  site-menu__item--catalog">
+            <div class="site-menu__item-container">
+              <div class="site-menu__item-content">
+                <a class="site-menu__link" href="#">
+                  Каталог товаров
+                </a>
+              </div>
+            </div>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link  site-menu__link--search-icon" href="#">
-              Поиск по сайту
-            </a>
+          <li class="site-menu__item  site-menu__item--order">
+            <div class="site-menu__item-container">
+              <div class="site-menu__item-content">
+                <a class="site-menu__link" href="#">
+                  Вязание на заказ
+                </a>
+              </div>
+            </div>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link  site-menu__link--cart-icon" href="#">
-              Корзина: пока пуста
-            </a>
+          <li class="site-menu__item  site-menu__item--search">
+            <div class="site-menu__item-container">
+              <div class="site-menu__item-content">
+                <a class="site-menu__link" href="#">
+                  Поиск по сайту
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="site-menu__item  site-menu__item--cart">
+            <div class="site-menu__item-container">
+              <div class="site-menu__item-content">
+                <a class="site-menu__link" href="#">
+                  Корзина: пока пуста
+                </a>
+              </div>
+            </div>
           </li>
         </ul>
-      </nav>-->
+      </div>
+    </nav>
+
+    <header class="page-header">
     </header>
 
     <section class="product-categories">
@@ -227,5 +256,7 @@
         </div>
       </div>
     </div> -->
+
+    <script src="js/app.js"></script>
   </body>
 </html>
