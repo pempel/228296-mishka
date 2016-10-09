@@ -72,52 +72,76 @@
           <article class="product">
             <div class="product__photo-wrapper">
               <a class="product__photo-link" href="#">
-                <img src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="http://placehold.it/316x462">
+                  <source media="(min-width: 768px)" srcset="http://placehold.it/332x334">
+                  <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+                </picture>
               </a>
             </div>
             <div class="product__summary">
-              <h1 class="product__title">Зайчик-попрыгайчик</h1>
-              <span class="product__description">Рост 30 см, вес 200 г.</span>
-            </div>
-            <div class="product__price-wrapper">
-              <span class="product__price">1 200 руб.</span>
-              <a class="product__cart-link" href="#">
-                <img src="img/icon-cart.svg" width="21" height="19">
-              </a>
+              <div class="product__title-wrapper">
+                <a class="product__title-link" href="#">
+                  <h1 class="product__title">Зайчик-попрыгайчик</h1>
+                </a>
+                <div class="product__subtitle">Рост 30 см, вес 200 г.</div>
+              </div>
+              <div class="product__price-wrapper">
+                <a class="product__price-link" href="#">
+                  <div class="product__price">1 200 руб.</div>
+                  <img src="img/icon-cart.svg" width="21" height="19">
+                </a>
+              </div>
             </div>
           </article>
           <article class="product">
             <div class="product__photo-wrapper">
               <a class="product__photo-link" href="#">
-                <img src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="http://placehold.it/316x462">
+                  <source media="(min-width: 768px)" srcset="http://placehold.it/332x334">
+                  <img src="http://placehold.it/260x195" alt="Корзинка для белья">
+                </picture>
               </a>
             </div>
             <div class="product__summary">
-              <h1 class="product__title">Корзинка для белья</h1>
-              <span class="product__description">Диаметр 15 см, высота 10 см</span>
-            </div>
-            <div class="product__price-wrapper">
-              <span class="product__price">690 руб.</span>
-              <a class="product__cart-link" href="#">
-                <img src="img/icon-cart.svg" width="21" height="19">
-              </a>
+              <div class="product__title-wrapper">
+                <a class="product__title-link" href="#">
+                  <h1 class="product__title">Корзинка для белья</h1>
+                </a>
+                <div class="product__subtitle">Диаметр 15 см, высота 10 см</div>
+              </div>
+              <div class="product__price-wrapper">
+                <a class="product__price-link" href="#">
+                  <div class="product__price">690 руб.</div>
+                  <img src="img/icon-cart.svg" width="21" height="19">
+                </a>
+              </div>
             </div>
           </article>
           <article class="product">
             <div class="product__photo-wrapper">
               <a class="product__photo-link" href="#">
-                <img src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="http://placehold.it/316x462">
+                  <source media="(min-width: 768px)" srcset="http://placehold.it/332x334">
+                  <img src="http://placehold.it/260x195" alt="Большая корзинка для игрушек">
+                </picture>
               </a>
             </div>
             <div class="product__summary">
-              <h1 class="product__title">Большая корзинка для игрушек</h1>
-              <span class="product__description">Диаметр 30 см, высота 30 см</span>
-            </div>
-            <div class="product__price-wrapper">
-              <span class="product__price">1 500 руб.</span>
-              <a class="product__cart-link" href="#">
-                <img src="img/icon-cart.svg" width="21" height="19">
-              </a>
+              <div class="product__title-wrapper">
+                <a class="product__title-link" href="#">
+                  <h1 class="product__title">Большая корзинка для игрушек</h1>
+                </a>
+                <div class="product__subtitle">Диаметр 30 см, высота 30 см</div>
+              </div>
+              <div class="product__price-wrapper">
+                <a class="product__price-link" href="#">
+                  <div class="product__price">1 500 руб.</div>
+                  <img src="img/icon-cart.svg" width="21" height="19">
+                </a>
+              </div>
             </div>
           </article>
         </div>
@@ -126,11 +150,15 @@
 
     <section class="production-process">
       <div class="production-process__container">
-        <h1 class="production-process__title">Процесс производства</h1>
-        <div class="production-process__video-wrapper">
-          <img src="http://placehold.it/260x150" width="260" height="150" alt="Процесс производства">
-        </div>
-        <div class="production-process__description-wrapper">
+        <div class="production-process__content">
+          <h1 class="production-process__title">Процесс производства</h1>
+          <div class="production-process__video-wrapper">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="http://placehold.it/682x455">
+              <source media="(min-width: 768px)" srcset="http://placehold.it/668x455">
+              <img src="http://placehold.it/260x150" alt="Процесс производства">
+            </picture>
+          </div>
           <p class="production-process__description">
             По просьбам наших любимых фолловеров мы сняли для вас
             подробное видео о том, как появляются наши товары.

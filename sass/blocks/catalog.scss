@@ -21,9 +21,8 @@
   }
 
   .catalog__products {
-    // GRID ONLY {
-    min-height: 1237px;
-    // }
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -37,9 +36,9 @@
   }
 
   .catalog__products {
-    // GRID ONLY {
-    min-height: 1189px;
-    // }
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
   }
 }
 
@@ -56,9 +55,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-    // GRID ONLY {
-    min-height: 787px;
-    // }
+    justify-content: space-between;
   }
 }
