@@ -45,10 +45,6 @@
 }
 
 @media #{$mobile-only} {
-  .product-categories {
-    margin-top: -18px;
-  }
-
   .product-categories__container {
     @include container();
   }

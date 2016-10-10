@@ -59,6 +59,8 @@
   .site-menu__list {
     display: flex;
     flex-direction: column;
+
+    background-color: $palette-secondary-light;
   }
 
   .site-menu__item {
@@ -134,6 +136,17 @@
 
   .site-menu--opened,
   .site-menu--nojs {
+    position: relative;
+    z-index: 2;
+
+    height: 80px;
+
+    .site-menu__list {
+      position: absolute;
+
+      width: 100%;
+    }
+
     .site-menu__item {
       display: block;
     }
@@ -157,6 +170,12 @@
       background-repeat: no-repeat;
       border-style: none;
       cursor: pointer;
+    }
+  }
+
+  .site-menu--nojs {
+    .site-menu__toggle {
+      display: none;
     }
   }
 }
