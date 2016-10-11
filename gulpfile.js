@@ -33,6 +33,11 @@ gulp.task('copy', function() {
   .pipe(gulp.dest('build'));
 });
 
+// gulp.task('copy:html', function() {
+//   return gulp.src(['*.html'])
+//     .pipe(gulp.dest('build'));
+// });
+
 gulp.task('scripts', function() {
   gulp.src('js/app.js')
     .pipe(gulp.dest('build/js'))
@@ -60,7 +65,8 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('build/css'))
     .pipe(csso())
     .pipe(rename('app.min.css'))
-    .pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest('build/css'))
+    .pipe(server.stream());
 });
 
 gulp.task('symbols', function() {
@@ -81,7 +87,11 @@ gulp.task('symbols', function() {
 
 gulp.task('build', function(fn) {
   run('clean', 'copy', 'scripts', 'styles', 'symbols', fn);
-})
+});
+
+gulp.task('reload', function() {
+  server.reload();
+});
 
 gulp.task('serve', function() {
   server.init({
@@ -93,5 +103,5 @@ gulp.task('serve', function() {
 
   gulp.watch('js/**/*.js', ['scripts']);
   gulp.watch('sass/**/*.{scss,sass}', ['styles']);
-  gulp.watch('*.html').on('change', function() { run('copy', 'reload'); });
+  gulp.watch('*.html', function() { run('copy', 'symbols', 'reload'); });
 });

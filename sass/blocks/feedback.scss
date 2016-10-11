@@ -2,6 +2,10 @@
   // GRID ONLY {
   outline: 1px solid red;
   // }
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
 }
 
 .feedback__title {
@@ -104,9 +108,6 @@
 
   .feedback__container {
     @include container();
-
-    background-image: url("http://placehold.it/350x457");
-    background-repeat: no-repeat;
   }
 
   .feedback__content {
@@ -116,6 +117,9 @@
 
     padding-top: 79px;
     padding-bottom: 44px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .feedback__title {
@@ -169,8 +173,13 @@
     padding-top: 72px;
     padding-bottom: 93px;
 
-    background-image: url("http://placehold.it/350x457");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+
+    @media #{$retina} {
+      background-image: url("../img/review@2x.jpg");
+      background-size: contain;
+    }
   }
 
   .feedback__title {

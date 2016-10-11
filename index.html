@@ -18,9 +18,9 @@
               <div class="site-menu__item-content">
                 <a class="site-menu__link">
                   <picture>
-                    <source media="(min-width: 1150px)" srcset="http://placehold.it/149x72">
-                    <source media="(min-width: 768px)" srcset="http://placehold.it/113x46">
-                    <img class="site-menu__logo" src="http://placehold.it/86x35" alt="Логотип">
+                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img class="site-menu__logo" src="img/logo-mobile.svg" alt="Логотип">
                   </picture>
                 </a>
                 <button class="site-menu__toggle" type="button">Открыть меню</button>
@@ -30,7 +30,7 @@
           <li class="site-menu__item  site-menu__item--catalog">
             <div class="site-menu__item-container">
               <div class="site-menu__item-content">
-                <a class="site-menu__link" href="#">
+                <a class="site-menu__link" href="catalog.html">
                   Каталог товаров
                 </a>
               </div>
@@ -39,7 +39,7 @@
           <li class="site-menu__item  site-menu__item--order">
             <div class="site-menu__item-container">
               <div class="site-menu__item-content">
-                <a class="site-menu__link" href="#">
+                <a class="site-menu__link" href="form.html">
                   Вязание на заказ
                 </a>
               </div>
@@ -48,7 +48,7 @@
           <li class="site-menu__item  site-menu__item--search">
             <div class="site-menu__item-container">
               <div class="site-menu__item-content">
-                <a class="site-menu__link" href="#">
+                <a class="site-menu__link" href="search.html">
                   Поиск по сайту
                 </a>
               </div>
@@ -57,7 +57,7 @@
           <li class="site-menu__item  site-menu__item--cart">
             <div class="site-menu__item-container">
               <div class="site-menu__item-content">
-                <a class="site-menu__link" href="#">
+                <a class="site-menu__link" href="cart.html">
                   Корзина: пока пуста
                 </a>
               </div>
@@ -96,13 +96,23 @@
           <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
           <ul class="page-header__list">
             <li class="page-header__item">
-              <a class="page-header__link  page-header__link--interior-icon" href="#">
-                Предметы интерьера
+              <a class="page-header__link  page-header__link--interior" href="interior.html">
+                <span class="page-header__link-text">
+                  Предметы интерьера
+                </span>
+                <svg class="page-header__link-icon" width="41" height="62">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-interior"></use>
+                </svg>
               </a>
             </li>
             <li class="page-header__item">
-              <a class="page-header__link  page-header__link--toy-icon  page-header__link--dark" href="#">
-                Детские игрушки
+              <a class="page-header__link  page-header__link--toy  page-header__link--dark" href="toys.html">
+                <span class="page-header__link-text">
+                  Детские игрушки
+                </span>
+                <svg class="page-header__link-icon" width="61" height="61">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toy"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -136,10 +146,14 @@
             </tr>
           </table>
           <div class="featured-product__photo-wrapper">
-            <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg" alt="Вязаные корзинки">
+            </picture>
           </div>
           <span class="featured-product__price">Цена: 990 руб.</span>
-          <a class="featured-product__link" href="#">Заказать</a>
+          <a class="featured-product__link" href="product.html">Заказать</a>
         </section>
       </div>
     </article>
@@ -148,22 +162,28 @@
       <div class="about-us__container">
         <h1 class="about-us__title">Коротко о&nbsp;нас:</h1>
         <ul class="about-us__list">
-          <li class="about-us__item  about-us__item--flower-icon">
+          <li class="about-us__item  about-us__item--feature-1">
+            <img class="about-us__item-icon" src="img/icon-feature-1.svg" width="33" height="38" alt="Преимущество 1">
             Экологически чистые материалы
           </li>
-          <li class="about-us__item  about-us__item--money-icon">
+          <li class="about-us__item  about-us__item--feature-2">
+            <img class="about-us__item-icon" src="img/icon-feature-2.svg" width="47" height="27" alt="Преимущество 2">
             Скандинавский стиль по&nbsp;российской цене
           </li>
-          <li class="about-us__item  about-us__item--heart-icon">
+          <li class="about-us__item  about-us__item--feature-3">
+            <img class="about-us__item-icon" src="img/icon-feature-3.svg" width="34" height="27" alt="Преимущество 3">
             Увеличивает лайки на&nbsp;фотографиях
           </li>
-          <li class="about-us__item  about-us__item--knot-icon">
+          <li class="about-us__item  about-us__item--feature-4">
+            <img class="about-us__item-icon" src="img/icon-feature-4.svg" width="35" height="34" alt="Преимущество 4">
             Связано вручную с&nbsp;любовью и&nbsp;умилением
           </li>
-          <li class="about-us__item  about-us__item--rocket-icon">
+          <li class="about-us__item  about-us__item--feature-5">
+            <img class="about-us__item-icon" src="img/icon-feature-5.svg" width="55" height="23" alt="Преимущество 5">
             Поддержка отечественного производителя
           </li>
-          <li class="about-us__item  about-us__item--gift-icon">
+          <li class="about-us__item  about-us__item--feature-6">
+            <img class="about-us__item-icon" src="img/icon-feature-6.svg" width="33" height="32" alt="Преимущество 6">
             Поставляется в&nbsp;подарочной упаковке
           </li>
         </ul>
@@ -195,7 +215,7 @@
               </footer>
             </article>
           </div>
-          <a class="feedback__link" href="#">Написать</a>
+          <a class="feedback__link" href="feedback.html">Написать</a>
         </div>
       </div>
     </section>
@@ -231,7 +251,11 @@
             </div>
           </header>
           <div class="contacts__map-wrapper">
-            <img src="http://placehold.it/320x457" alt="Карта">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+              <img src="img/map-mobile@1x.jpg" alt="Карта">
+            </picture>
           </div>
           <footer class="contacts__footer">
             <div class="contacts__footer-container">
