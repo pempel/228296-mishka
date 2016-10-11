@@ -5,10 +5,12 @@ $x-palette-gray-light: #ececec;
 $x-palette-gray-lighter: #f1f1f1;
 $x-palette-green-dark: #56c3b2;
 $x-palette-green-light: #63d1bb;
+$x-palette-white-almost: #f9f9f9;
 $x-palette-white: #ffffff;
 
-$palette-border-darker: $x-palette-black;
+$palette-hero-image-background: $x-palette-white-almost;
 $palette-border-dark: $x-palette-gray-dark;
+$palette-border-darker: $x-palette-black;
 $palette-border-light: $x-palette-gray-light;
 $palette-primary-dark: $x-palette-green-dark;
 $palette-primary-light: $x-palette-green-light;

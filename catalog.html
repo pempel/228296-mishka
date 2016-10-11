@@ -7,66 +7,91 @@
     <link rel="stylesheet" type="text/css" href="css/app.css">
   </head>
   <body class="body-catalog">
-    <header class="page-header">
-      <!-- <div class="page-header__logo-wrapper">
-        <a class="page-header__logo-link" href="#">
-          <img src="http://placehold.it/86x35" width="86" height="35" alt="Логотип">
-        </a>
-      </div>
-      <nav class="site-menu  site-menu--closed">
-        <button class="site-menu__toggle" type="button">Открыть меню</button>
+    <nav class="site-menu  site-menu--closed  site-menu--nojs">
+      <div class="site-menu__container">
         <ul class="site-menu__list">
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="#">
-              Каталог товаров
-            </a>
+          <li class="site-menu__item  site-menu__item--logo">
+            <div class="site-menu__item-container">
+              <div class="site-menu__item-content">
+                <a class="site-menu__link">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="http://placehold.it/149x72">
+                    <source media="(min-width: 768px)" srcset="http://placehold.it/113x46">
+                    <img class="site-menu__logo" src="http://placehold.it/86x35" alt="Логотип">
+                  </picture>
+                </a>
+                <button class="site-menu__toggle" type="button">Открыть меню</button>
+              </div>
+            </div>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link" href="#">
-              Вязание на заказ
-            </a>
+          <li class="site-menu__item  site-menu__item--catalog">
+            <div class="site-menu__item-container">
+              <div class="site-menu__item-content">
+                <a class="site-menu__link" href="#">
+                  Каталог товаров
+                </a>
+              </div>
+            </div>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link  site-menu__link--search-icon" href="#">
-              Поиск по сайту
-            </a>
+          <li class="site-menu__item  site-menu__item--order">
+            <div class="site-menu__item-container">
+              <div class="site-menu__item-content">
+                <a class="site-menu__link" href="#">
+                  Вязание на заказ
+                </a>
+              </div>
+            </div>
           </li>
-          <li class="site-menu__item">
-            <a class="site-menu__link  site-menu__link--cart-icon" href="#">
-              Корзина: пока пуста
-            </a>
+          <li class="site-menu__item  site-menu__item--search">
+            <div class="site-menu__item-container">
+              <div class="site-menu__item-content">
+                <a class="site-menu__link" href="#">
+                  Поиск по сайту
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="site-menu__item  site-menu__item--cart">
+            <div class="site-menu__item-container">
+              <div class="site-menu__item-content">
+                <a class="site-menu__link" href="#">
+                  Корзина: пока пуста
+                </a>
+              </div>
+            </div>
           </li>
         </ul>
-      </nav> -->
-    </header>
+      </div>
+    </nav>
 
-    <section class="catalog">
-      <header class="catalog__header">
-        <div class="extra-menu">
-          <div class="extra-menu__container">
-            <div class="extra-menu__content">
-              <ul class="extra-menu__list">
-                <li class="extra-menu__item">
-                  <a class="extra-menu__link" href="catalog.html">Каталог товаров</a>
-                </li>
-                <li class="extra-menu__item">
-                  <a class="extra-menu__link" href="form.html">Вязание на заказ</a>
-                </li>
-                <li class="extra-menu__item">
-                  <a class="extra-menu__link" href="new-arrivals.html">Новые поступления</a>
-                </li>
-                <li class="extra-menu__item">
-                  <a class="extra-menu__link" href="sale.html">Распродажа</a>
-                </li>
-              </ul>
-              <div class="extra-menu__info">
-                Бесплатная доставка по России
-              </div>
+    <header class="page-header">
+      <div class="extra-menu">
+        <div class="extra-menu__container">
+          <div class="extra-menu__content">
+            <ul class="extra-menu__list">
+              <li class="extra-menu__item">
+                <a class="extra-menu__link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="extra-menu__item">
+                <a class="extra-menu__link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="extra-menu__item">
+                <a class="extra-menu__link" href="new-arrivals.html">Новые поступления</a>
+              </li>
+              <li class="extra-menu__item">
+                <a class="extra-menu__link" href="sale.html">Распродажа</a>
+              </li>
+            </ul>
+            <div class="extra-menu__info">
+              Бесплатная доставка по России
             </div>
           </div>
         </div>
-        <h1 class="catalog__title">Каталог товаров</h1>
-      </header>
+      </div>
+      <h1 class="page-header__title">Каталог товаров</h1>
+    </header>
+
+    <section class="catalog">
       <div class="catalog__container">
         <div class="catalog__products">
           <article class="product">
@@ -89,7 +114,7 @@
               <div class="product__price-wrapper">
                 <a class="product__price-link" href="#">
                   <div class="product__price">1 200 руб.</div>
-                  <img src="img/icon-cart.svg" width="21" height="19">
+                  <img src="img/symbols/icon-cart.svg" width="21" height="19">
                 </a>
               </div>
             </div>
@@ -114,7 +139,7 @@
               <div class="product__price-wrapper">
                 <a class="product__price-link" href="#">
                   <div class="product__price">690 руб.</div>
-                  <img src="img/icon-cart.svg" width="21" height="19">
+                  <img src="img/symbols/icon-cart.svg" width="21" height="19">
                 </a>
               </div>
             </div>
@@ -139,7 +164,7 @@
               <div class="product__price-wrapper">
                 <a class="product__price-link" href="#">
                   <div class="product__price">1 500 руб.</div>
-                  <img src="img/icon-cart.svg" width="21" height="19">
+                  <img src="img/symbols/icon-cart.svg" width="21" height="19">
                 </a>
               </div>
             </div>

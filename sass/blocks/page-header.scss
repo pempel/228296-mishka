@@ -1,15 +1,171 @@
 .page-header {
-  // GRID ONLY {
-  // background-color: rgba(255, 255, 0, 0.4);
-  // outline: 1px solid red;
-  // }
+  padding-top: 17px;
+
+  background-color: $palette-secondary-dark;
+}
+
+.page-header__content {
+  position: relative;
+}
+
+.page-header__title {
+  margin: 0;
+
+  font-family: $font-family-bold;
+  text-align: center;
+  color: $palette-text-bold;
+}
+
+.page-header__list {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.page-header__link {
+  display: block;
+
+  font-family: $font-family-bold;
+  font-size: 19px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $palette-secondary-light;
+
+  background-color: $palette-primary-light;
+}
+
+.page-header__link--dark {
+  background-color: $palette-primary-dark;
 }
 
 @media #{$mobile-only} {
+  .page-header--big {
+    background-color: $palette-hero-image-background;
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -18px;
+    background-size: 574px;
+
+    .page-header__content {
+      min-height: 471px;
+    }
+
+    .page-header__title {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+  }
+
+  .page-header__container {
+    @include container();
+  }
+
+  .page-header__title {
+    padding-top: 53px;
+    padding-bottom: 76px;
+
+    font-size: 27px;
+    line-height: 30px;
+  }
+
+  .page-header__list {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media #{$tablet-only} {
+  .page-header {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: 0 208px;
+  }
+
+  .page-header--big {
+    background-color: $palette-hero-image-background;
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .page-header__content {
+      min-height: 698px;
+    }
+
+    .page-header__title {
+      padding-top: 107px;
+    }
+  }
+
+  .page-header__container {
+    @include container-with-padding();
+  }
+
+  .page-header__title {
+    padding-top: 48px;
+    padding-bottom: 80px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .page-header__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-header__item {
+    width: 50%;
+  }
 }
 
 @media #{$desktop-only} {
+  .page-header {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: 0 237px;
+  }
+
+  .page-header--big {
+    background-color: $palette-hero-image-background;
+    background-image: url("../img/hero-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1150px;
+
+    .page-header__content {
+      min-height: 698px;
+    }
+
+    .page-header__title {
+      padding-top: 107px;
+      padding-left: 217px;
+      padding-right: 217px;
+    }
+  }
+
+  .page-header__container {
+    @include container-with-padding();
+  }
+
+  .page-header__title {
+    padding-top: 46px;
+    padding-bottom: 104px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-header__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-header__item {
+    width: 50%;
+  }
 }
