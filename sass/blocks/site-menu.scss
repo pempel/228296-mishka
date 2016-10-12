@@ -219,8 +219,7 @@
   }
 
   .site-menu__item--logo {
-    box-sizing: border-box;
-    width: 320px;
+    flex-grow: 1;
 
     .site-menu__item-content {
       margin: 0;
@@ -245,11 +244,13 @@
 
   .site-menu__item--cart {
     display: block;
+    box-sizing: border-box;
+    width: 264px;
 
     border-style: none;
 
     .site-menu__item-content {
-      margin-left: 32px;
+      margin-left: 30px;
     }
 
     .site-menu__link {
