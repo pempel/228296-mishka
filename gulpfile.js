@@ -24,7 +24,6 @@ gulp.task('copy', function() {
   return gulp.src([
     'fonts/**/*.{woff2,woff}',
     'img/**',
-    'css/**',
     'js/**',
     '*.html'
   ], {
@@ -32,11 +31,6 @@ gulp.task('copy', function() {
   })
   .pipe(gulp.dest('build'));
 });
-
-// gulp.task('copy:html', function() {
-//   return gulp.src(['*.html'])
-//     .pipe(gulp.dest('build'));
-// });
 
 gulp.task('scripts', function() {
   gulp.src('js/app.js')
@@ -49,7 +43,9 @@ gulp.task('scripts', function() {
 gulp.task('styles', function() {
   gulp.src('sass/app.scss')
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require('node-normalize-scss').includePaths
+    }))
     .pipe(postcss([
       autoprefixer({browsers: [
         'last 1 version',
