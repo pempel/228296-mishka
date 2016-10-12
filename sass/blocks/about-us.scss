@@ -1,9 +1,3 @@
-.about-us {
-  // GRID ONLY {
-  outline: 1px solid red;
-  // }
-}
-
 .about-us__container {
   @include container-with-padding();
 }
@@ -34,6 +28,66 @@
   color: $palette-text-bold;
 }
 
+.about-us__item--feature-1 {
+  position: relative;
+
+  .about-us__item-icon {
+    position: absolute;
+    bottom: 64px;
+    left: 8px;
+  }
+}
+
+.about-us__item--feature-2 {
+  position: relative;
+
+  .about-us__item-icon {
+    position: absolute;
+    bottom: 73px;
+    left: 1px;
+  }
+}
+
+.about-us__item--feature-3 {
+  position: relative;
+
+  .about-us__item-icon {
+    position: absolute;
+    bottom: 68px;
+    left: 8px;
+  }
+}
+
+.about-us__item--feature-4 {
+  position: relative;
+
+  .about-us__item-icon {
+    position: absolute;
+    bottom: 64px;
+    left: 3px;
+  }
+}
+
+.about-us__item--feature-5 {
+  position: relative;
+
+  .about-us__item-icon {
+    position: absolute;
+    bottom: 74px;
+    left: -6px;
+  }
+}
+
+.about-us__item--feature-6 {
+  position: relative;
+
+  .about-us__item-icon {
+    position: absolute;
+    bottom: 67px;
+    left: 3px;
+  }
+}
+
 @media #{$mobile-only} {
   .about-us {
     padding-top: 26px;
@@ -45,6 +99,48 @@
 
   .about-us__item {
     padding-top: 85px;
+  }
+
+  .about-us__item--feature-1 {
+    .about-us__item-icon {
+      bottom: 56px;
+      left: 8px;
+    }
+  }
+
+  .about-us__item--feature-2 {
+    .about-us__item-icon {
+      bottom: 65px;
+      left: 0;
+    }
+  }
+
+  .about-us__item--feature-3 {
+    .about-us__item-icon {
+      bottom: 60px;
+      left: 7px;
+    }
+  }
+
+  .about-us__item--feature-4 {
+    .about-us__item-icon {
+      bottom: 56px;
+      left: 3px;
+    }
+  }
+
+  .about-us__item--feature-5 {
+    .about-us__item-icon {
+      bottom: 66px;
+      left: -6px;
+    }
+  }
+
+  .about-us__item--feature-6 {
+    .about-us__item-icon {
+      bottom: 59px;
+      left: 3px;
+    }
   }
 }
 
@@ -78,7 +174,7 @@
 
 @media #{$desktop-only} {
   .about-us {
-    padding-top: 60px;
+    padding-top: 58px;
     padding-bottom: 87px;
   }
 

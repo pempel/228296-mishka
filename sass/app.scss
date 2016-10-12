@@ -1,9 +1,9 @@
+@import "normalize";
+
 @import "global/variables";
 @import "global/mixins";
 @import "global/typography";
 @import "global/base";
-
-@import "global/scaffolds";
 
 @import "blocks/about-us";
 @import "blocks/catalog";
@@ -16,7 +16,6 @@
 @import "blocks/order-form";
 @import "blocks/page-footer";
 @import "blocks/page-header";
-@import "blocks/product-categories";
 @import "blocks/product-sizes";
 @import "blocks/product";
 @import "blocks/production-process";
