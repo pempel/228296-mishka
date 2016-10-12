@@ -49,6 +49,14 @@
   @include button();
 }
 
+.contacts__map-wrapper {
+  height: 457px;
+}
+
+.contacts__map {
+  max-width: 100%;
+}
+
 @media #{$mobile-only} {
   .contacts {
     padding-top: 36px;
