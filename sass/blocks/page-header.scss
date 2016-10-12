@@ -100,7 +100,13 @@
     }
 
     &:active {
-      opacity: 0.3;
+      .page-header__link-text {
+        opacity: 0.3;
+      }
+
+      .page-header__link-icon {
+        opacity: 0.3;
+      }
     }
   }
 
