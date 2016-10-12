@@ -2,10 +2,6 @@
   width: 320px;
   margin: 0 auto;
 
-  // GRID ONLY {
-  outline: 1px solid blue;
-  // }
-
   @media #{$tablet-only} {
     width: 768px;
   }
@@ -20,10 +16,6 @@
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
-
-  // GRID ONLY {
-  outline: 1px solid blue;
-  // }
 
   @media #{$tablet-only} {
     width: 668px;

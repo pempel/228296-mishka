@@ -64,7 +64,7 @@
   }
 
   .site-menu__item {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid $palette-border-light;
   }
 
   .site-menu__item-container {
@@ -186,7 +186,7 @@
 
 @media #{$tablet-only} {
   .site-menu {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid $palette-border-light;
   }
 
   .site-menu__container {
@@ -207,7 +207,7 @@
   }
 
   .site-menu__item {
-    border-right: 1px solid red;
+    border-right: 1px solid $palette-border-light;
   }
 
   .site-menu__item--catalog {
@@ -260,7 +260,7 @@
 
 @media #{$desktop-only} {
   .site-menu {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid $palette-border-light;
   }
 
   .site-menu__container {
@@ -277,7 +277,7 @@
   }
 
   .site-menu__item {
-    border-right: 1px solid red;
+    border-right: 1px solid $palette-border-light;
 
     .site-menu__item-content {
       margin-top: 31px;

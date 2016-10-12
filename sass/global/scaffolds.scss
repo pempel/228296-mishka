@@ -1,12 +1,9 @@
 body {
-  // GRID ONLY {
   background-repeat: no-repeat;
   background-position: 50% 0;
-  // }
 }
 
 @media #{$mobile-only} {
-  // GRID ONLY {
   body {
     &.body-index {
       background-image: url("../img/scaffold-index-1-mobile.png");
@@ -20,11 +17,9 @@ body {
       background-image: url("../img/scaffold-form-1-mobile.png");
     }
   }
-  // }
 }
 
 @media #{$tablet-only} {
-  // GRID ONLY {
   body {
     &.body-index {
       background-image: url("../img/scaffold-index-2-tablet.png");
@@ -38,11 +33,9 @@ body {
       background-image: url("../img/scaffold-form-2-tablet.png");
     }
   }
-  // }
 }
 
 @media #{$desktop-only} {
-  // GRID ONLY {
   body {
     &.body-index {
       background-image: url("../img/scaffold-index-3-desktop.png");
@@ -56,5 +49,4 @@ body {
       background-image: url("../img/scaffold-form-3-desktop.png");
     }
   }
-  // }
 }

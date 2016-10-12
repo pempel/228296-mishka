@@ -72,7 +72,7 @@ gulp.task('symbols', function() {
       inlineSvg: true
     }));
 
-  return gulp.src('build/index.html')
+  return gulp.src('build/*.html')
     .pipe(inject(svgs, {
       transform: function(path, file) {
         return file.contents.toString()

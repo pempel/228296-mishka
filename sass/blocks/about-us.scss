@@ -1,9 +1,3 @@
-.about-us {
-  // GRID ONLY {
-  outline: 1px solid red;
-  // }
-}
-
 .about-us__container {
   @include container-with-padding();
 }

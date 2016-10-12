@@ -115,7 +115,7 @@
       height: 1px;
       content: "";
 
-      background-color: red;
+      background-color: $palette-primary-light;
     }
   }
 }
@@ -141,6 +141,8 @@
     }
 
     &--color {
+      background-color: $palette-secondary-dark;
+
       .order-form__line-content {
         padding-top: 75px;
         padding-bottom: 23px;
@@ -165,12 +167,16 @@
     }
 
     &--phone {
+      background-color: $palette-secondary-dark;
+
       .order-form__line-content {
         padding-top: 51px;
       }
     }
 
     &--email {
+      background-color: $palette-secondary-dark;
+
       .order-form__line-content {
         padding-bottom: 45px;
       }
@@ -246,6 +252,8 @@
     }
 
     &--color {
+      background-color: $palette-secondary-dark;
+
       .order-form__line-content {
         padding-top: 75px;
         padding-bottom: 23px;
@@ -272,12 +280,16 @@
     }
 
     &--phone {
+      background-color: $palette-secondary-dark;
+
       .order-form__line-content {
         padding-top: 52px;
       }
     }
 
     &--email {
+      background-color: $palette-secondary-dark;
+
       .order-form__line-content {
         padding-bottom: 44px;
       }
