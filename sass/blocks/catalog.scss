@@ -17,7 +17,7 @@
   }
 }
 
-@media #{$desktop-only} {
+@media #{$desktop} {
   .catalog__products {
     display: flex;
     flex-direction: row;

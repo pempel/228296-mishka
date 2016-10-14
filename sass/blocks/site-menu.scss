@@ -259,7 +259,7 @@
   }
 }
 
-@media #{$desktop-only} {
+@media #{$desktop} {
   .site-menu {
     border-bottom: 1px solid $palette-border-light;
   }

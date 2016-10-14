@@ -35,7 +35,7 @@ body {
   }
 }
 
-@media #{$desktop-only} {
+@media #{$desktop} {
   body {
     &.body-index {
       background-image: url("../img/scaffold-index-3-desktop.png");

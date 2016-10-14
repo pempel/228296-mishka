@@ -153,7 +153,7 @@
             </picture>
           </div>
           <span class="featured-product__price">Цена: 990 руб.</span>
-          <a class="featured-product__link" href="product.html">Заказать</a>
+          <a class="featured-product__link" href="product-1.html">Заказать</a>
         </section>
       </div>
     </article>
@@ -299,20 +299,33 @@
       </div>
     </footer>
 
-    <!-- <div class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
+    <div class="modal  modal--hidden">
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
       <div class="modal__content">
-        <div class="product-sizes">
-          <p class="product-sizes__title">Выберите размер:</p>
-          <ul class="product-sizes__list">
-            <li class="product-sizes__item  product-sizes__item--selected">S</li>
-            <li class="product-sizes__item">M</li>
-            <li class="product-sizes__item">L</li>
-          </ul>
-          <a class="product-sizes__link" href="#">Добавить</a>
-        </div>
+        <form class="product-size" method="post">
+          <div class="product-sizes__container">
+            <p class="product-sizes__title">Выберите размер:</p>
+            <ul class="product-sizes__list">
+              <li class="product-sizes__item">
+                <input class="product-sizes__item-input" type="radio" name="product[size]" id="product_size_s" value="s" checked>
+                <label class="product-sizes__item-label" for="product_size_s">S</label>
+              </li>
+              <li class="product-sizes__item">
+                <input class="product-sizes__item-input" type="radio" name="product[size]" id="product_size_m" value="m">
+                <label class="product-sizes__item-label" for="product_size_m">M</label>
+              </li>
+              <li class="product-sizes__item">
+                <input class="product-sizes__item-input" type="radio" name="product[size]" id="product_size_l" value="l">
+                <label class="product-sizes__item-label" for="product_size_l">L</label>
+              </li>
+            </ul>
+            <button class="product-sizes__button" type="submit">Добавить</button>
+          </div>
+        </form>
       </div>
-    </div> -->
+    </div>
+
+    <div class="overlay  overlay--hidden"></div>
 
     <script src="js/app.min.js"></script>
   </body>

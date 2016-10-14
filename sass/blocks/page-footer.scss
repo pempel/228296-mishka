@@ -86,7 +86,7 @@
   }
 }
 
-@media #{$desktop-only} {
+@media #{$desktop} {
   .page-footer__content {
     display: flex;
     flex-direction: row;

@@ -99,7 +99,7 @@
         <div class="catalog__products">
           <article class="product">
             <div class="product__photo-wrapper">
-              <a class="product__photo-link" href="product.html">
+              <a class="product__photo-link" href="product-2.html">
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
@@ -109,13 +109,13 @@
             </div>
             <div class="product__summary">
               <div class="product__title-wrapper">
-                <a class="product__title-link" href="product.html">
+                <a class="product__title-link" href="product-2.html">
                   <h1 class="product__title">Зайчик-попрыгайчик</h1>
                 </a>
                 <div class="product__subtitle">Рост 30 см, вес 200 г.</div>
               </div>
               <div class="product__price-wrapper">
-                <a class="product__price-link" href="product.html">
+                <a class="product__price-link" href="product-2.html">
                   <div class="product__price">1 200 руб.</div>
                   <img src="img/symbols/icon-cart.svg" width="21" height="19" alt="Корзина">
                 </a>
@@ -124,7 +124,7 @@
           </article>
           <article class="product">
             <div class="product__photo-wrapper">
-              <a class="product__photo-link" href="product.html">
+              <a class="product__photo-link" href="product-3.html">
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
@@ -134,13 +134,13 @@
             </div>
             <div class="product__summary">
               <div class="product__title-wrapper">
-                <a class="product__title-link" href="product.html">
+                <a class="product__title-link" href="product-3.html">
                   <h1 class="product__title">Корзинка для белья</h1>
                 </a>
                 <div class="product__subtitle">Диаметр 15 см, высота 10 см</div>
               </div>
               <div class="product__price-wrapper">
-                <a class="product__price-link" href="product.html">
+                <a class="product__price-link" href="product-3.html">
                   <div class="product__price">690 руб.</div>
                   <img src="img/symbols/icon-cart.svg" width="21" height="19" alt="Корзина">
                 </a>
@@ -149,7 +149,7 @@
           </article>
           <article class="product">
             <div class="product__photo-wrapper">
-              <a class="product__photo-link" href="product.html">
+              <a class="product__photo-link" href="product-4.html">
                 <picture>
                   <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
@@ -159,13 +159,13 @@
             </div>
             <div class="product__summary">
               <div class="product__title-wrapper">
-                <a class="product__title-link" href="product.html">
+                <a class="product__title-link" href="product-4.html">
                   <h1 class="product__title">Большая корзинка для игрушек</h1>
                 </a>
                 <div class="product__subtitle">Диаметр 30 см, высота 30 см</div>
               </div>
               <div class="product__price-wrapper">
-                <a class="product__price-link" href="product.html">
+                <a class="product__price-link" href="product-4.html">
                   <div class="product__price">1 500 руб.</div>
                   <img src="img/symbols/icon-cart.svg" width="21" height="19" alt="Корзина">
                 </a>
@@ -191,7 +191,7 @@
             По просьбам наших любимых фолловеров мы сняли для вас
             подробное видео о том, как появляются наши товары.
           </p>
-          <a class="production-process__link" href="#">Сделать заказ</a>
+          <a class="production-process__link" href="form.html">Сделать заказ</a>
         </div>
       </div>
     </section>
@@ -233,20 +233,33 @@
       </div>
     </footer>
 
-    <!-- <div class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
+    <div class="modal  modal--hidden">
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
       <div class="modal__content">
-        <div class="product-sizes">
-          <p class="product-sizes__title">Выберите размер:</p>
-          <ul class="product-sizes__list">
-            <li class="product-sizes__item  product-sizes__item--selected">S</li>
-            <li class="product-sizes__item">M</li>
-            <li class="product-sizes__item">L</li>
-          </ul>
-          <a class="product-sizes__link" href="#">Добавить</a>
-        </div>
+        <form class="product-sizes" method="post">
+          <div class="product-sizes__container">
+            <p class="product-sizes__title">Выберите размер:</p>
+            <ul class="product-sizes__list">
+              <li class="product-sizes__item">
+                <input class="product-sizes__item-input" type="radio" name="product[size]" id="product_size_s" value="S" checked>
+                <label class="product-sizes__item-label" for="product_size_s">S</label>
+              </li>
+              <li class="product-sizes__item">
+                <input class="product-sizes__item-input" type="radio" name="product[size]" id="product_size_m" value="M">
+                <label class="product-sizes__item-label" for="product_size_m">M</label>
+              </li>
+              <li class="product-sizes__item">
+                <input class="product-sizes__item-input" type="radio" name="product[size]" id="product_size_l" value="L">
+                <label class="product-sizes__item-label" for="product_size_l">L</label>
+              </li>
+            </ul>
+            <button class="product-sizes__button" type="submit">Добавить</button>
+          </div>
+        </form>
       </div>
-    </div> -->
+    </div>
+
+    <div class="overlay  overlay--hidden"></div>
 
     <script src="js/app.min.js"></script>
   </body>

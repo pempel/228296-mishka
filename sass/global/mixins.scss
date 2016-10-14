@@ -6,7 +6,7 @@
     width: 768px;
   }
 
-  @media #{$desktop-only} {
+  @media #{$desktop} {
     width: 1150px;
   }
 }
@@ -23,7 +23,7 @@
     padding-right: 50px;
   }
 
-  @media #{$desktop-only} {
+  @media #{$desktop} {
     width: 1050px;
     padding-left: 50px;
     padding-right: 50px;
@@ -44,4 +44,5 @@
 
   background-color: inherit;
   border: 2px solid $palette-text;
+  cursor: pointer;
 }
