@@ -200,6 +200,7 @@
   .site-menu__list {
     display: flex;
     flex-direction: row;
+    height: 88px;
   }
 
   .site-menu__item-content {
@@ -219,7 +220,7 @@
   }
 
   .site-menu__item--logo {
-    flex-grow: 1;
+    width: 321px;
 
     .site-menu__item-content {
       margin: 0;
@@ -275,6 +276,7 @@
   .site-menu__list {
     display: flex;
     flex-direction: row;
+    height: 88px;
   }
 
   .site-menu__item {
