@@ -7,7 +7,7 @@
 
   margin: 0;
 
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   color: $palette-text-bold;
 
   &::before {
@@ -128,7 +128,7 @@
   }
 }
 
-@media #{$desktop-only} {
+@media #{$desktop} {
   .production-process {
     margin-top: 57px;
     margin-bottom: 105px;
@@ -139,7 +139,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
-    max-height: 453px;
+    height: 453px;
   }
 
   .production-process__title {

@@ -9,7 +9,7 @@
 .product__title {
   margin: 0;
 
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   font-size: 17px;
   line-height: 24px;
   color: $palette-text-bold;
@@ -35,7 +35,7 @@
 }
 
 .product__price {
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   font-size: 15px;
   line-height: 24px;
   color: $palette-text-bold;
@@ -113,7 +113,7 @@
   }
 }
 
-@media #{$desktop-only} {
+@media #{$desktop} {
   .product {
     width: 316px;
     margin-top: 128px;

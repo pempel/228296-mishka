@@ -1,3 +1,8 @@
+.site-menu {
+  position: relative;
+  z-index: 2;
+}
+
 .site-menu__list {
   margin: 0;
   padding: 0;
@@ -5,53 +10,27 @@
   list-style: none;
 }
 
+.site-menu__item {
+  box-sizing: border-box;
+}
+
+.site-menu__item-content {
+  position: relative;
+}
+
 .site-menu__link {
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
   color: $palette-text-bold;
 }
 
-.site-menu__item--search {
-  .site-menu__link {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      top: 3px;
-      left: 0;
-
-      width: 18px;
-      height: 19px;
-      content: "";
-
-      background-image: url("../img/symbols/icon-search.svg");
-      background-repeat: no-repeat;
-    }
-  }
-}
-
-.site-menu__item--cart {
-  .site-menu__link {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      top: 3px;
-      left: 0;
-
-      width: 21px;
-      height: 18px;
-      content: "";
-
-      background-image: url("../img/symbols/icon-cart.svg");
-      background-repeat: no-repeat;
-    }
-  }
-}
-
 @media #{$mobile-only} {
+  .site-menu {
+    height: 80px;
+  }
+
   .site-menu__logo {
     margin: 0 auto;
   }
@@ -67,22 +46,20 @@
     border-bottom: 1px solid $palette-border-light;
   }
 
-  .site-menu__item-container {
-    @include container();
-  }
-
-  .site-menu__item-content {
-    padding-top: 27px;
-    padding-bottom: 27px;
-    padding-left: 76px;
-  }
-
   .site-menu__item--logo {
     .site-menu__item-content {
       padding: 22px 0;
 
       text-align: center;
     }
+  }
+
+  .site-menu__item--new-arrivals {
+    display: none;
+  }
+
+  .site-menu__item--sale {
+    display: none;
   }
 
   .site-menu__item--search {
@@ -92,6 +69,12 @@
 
     .site-menu__link {
       padding-left: 46px;
+    }
+
+    .site-menu__link-icon {
+      position: absolute;
+      top: 3px;
+      left: 2px;
     }
   }
 
@@ -103,6 +86,26 @@
     .site-menu__link {
       padding-left: 46px;
     }
+
+    .site-menu__link-icon {
+      position: absolute;
+      top: 3px;
+      left: 0;
+    }
+  }
+
+  .site-menu__item--shipping {
+    display: none;
+  }
+
+  .site-menu__item-container {
+    @include container();
+  }
+
+  .site-menu__item-content {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 76px;
   }
 
   .site-menu--closed {
@@ -112,10 +115,6 @@
 
     .site-menu__item--logo {
       display: block;
-    }
-
-    .site-menu__item-content {
-      position: relative;
     }
 
     .site-menu__toggle {
@@ -142,8 +141,6 @@
     position: relative;
     z-index: 2;
 
-    height: 80px;
-
     .site-menu__list {
       position: absolute;
 
@@ -154,8 +151,16 @@
       display: block;
     }
 
-    .site-menu__item-content {
-      position: relative;
+    .site-menu__item--new-arrivals {
+      display: none;
+    }
+
+    .site-menu__item--sale {
+      display: none;
+    }
+
+    .site-menu__item--shipping {
+      display: none;
     }
 
     .site-menu__toggle {
@@ -186,7 +191,7 @@
 
 @media #{$tablet-only} {
   .site-menu {
-    border-bottom: 1px solid $palette-border-light;
+    height: 89px;
   }
 
   .site-menu__container {
@@ -200,67 +205,114 @@
   .site-menu__list {
     display: flex;
     flex-direction: row;
-  }
-
-  .site-menu__item-content {
-    margin-top: 31px;
-  }
-
-  .site-menu__item {
-    border-right: 1px solid $palette-border-light;
-  }
-
-  .site-menu__item--catalog {
-    display: none;
-  }
-
-  .site-menu__item--order {
-    display: none;
+    flex-wrap: wrap;
   }
 
   .site-menu__item--logo {
-    box-sizing: border-box;
-    width: 320px;
+    order: 1;
+    width: 321px;
+
+    border-bottom: 1px solid $palette-border-light;
+    border-right: 1px solid $palette-border-light;
 
     .site-menu__item-content {
-      margin: 0;
       margin-top: 22px;
       margin-bottom: 20px;
     }
   }
 
   .site-menu__item--search {
-    box-sizing: border-box;
+    order: 2;
     width: 83px;
+
+    border-bottom: 1px solid $palette-border-light;
+    border-right: 1px solid $palette-border-light;
+
+    .site-menu__item-content {
+      margin-top: 31px;
+    }
 
     .site-menu__link {
       font-size: 0;
+    }
 
-      &::before {
-        top: -12px;
-        left: 34px;
-      }
+    .site-menu__link-icon {
+      position: absolute;
+      top: 4px;
+      left: 32px;
     }
   }
 
   .site-menu__item--cart {
-    display: block;
+    order: 3;
+    width: 264px;
 
-    border-style: none;
+    border-bottom: 1px solid $palette-border-light;
 
     .site-menu__item-content {
-      margin-left: 32px;
+      margin-top: 31px;
+      margin-left: 30px;
     }
 
     .site-menu__link {
       padding-left: 52px;
     }
+
+    .site-menu__link-icon {
+      position: absolute;
+      top: 4px;
+      left: 0;
+    }
+  }
+
+  .site-menu__item--catalog {
+    order: 4;
+    width: 167px;
+
+    .site-menu__item-content {
+      margin-top: 17px;
+    }
+
+    .site-menu__link {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+
+  .site-menu__item--order {
+    order: 5;
+    width: 270px;
+
+    .site-menu__item-content {
+      margin-top: 17px;
+    }
+
+    .site-menu__link {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+
+  .site-menu__item--shipping {
+    order: 6;
+
+    .site-menu__item-content {
+      margin-top: 17px;
+    }
+  }
+
+  .site-menu__item--new-arrivals {
+    display: none;
+  }
+
+  .site-menu__item--sale {
+    display: none;
   }
 }
 
-@media #{$desktop-only} {
+@media #{$desktop} {
   .site-menu {
-    border-bottom: 1px solid $palette-border-light;
+    height: 89px;
   }
 
   .site-menu__container {
@@ -274,9 +326,14 @@
   .site-menu__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .site-menu__item {
+  .site-menu__item--catalog {
+    order: 1;
+    width: 185px;
+
+    border-bottom: 1px solid $palette-border-light;
     border-right: 1px solid $palette-border-light;
 
     .site-menu__item-content {
@@ -284,60 +341,107 @@
     }
   }
 
-  .site-menu__item--catalog {
-    box-sizing: border-box;
-    width: 185px;
-  }
-
   .site-menu__item--order {
-    box-sizing: border-box;
+    order: 2;
     width: 265px;
 
-    border-style: none;
+    border-bottom: 1px solid $palette-border-light;
 
     .site-menu__item-content {
+      margin-top: 31px;
       margin-left: 35px;
     }
   }
 
   .site-menu__item--logo {
-    order: 1;
-    box-sizing: border-box;
+    order: 3;
     width: 251px;
 
+    border-bottom: 1px solid $palette-border-light;
+    border-right: 1px solid $palette-border-light;
+
     .site-menu__item-content {
-      margin: 0;
       margin-top: 9px;
-      margin-bottom: 7px;
+      margin-bottom: 6px;
     }
   }
 
   .site-menu__item--search {
-    order: 2;
-    box-sizing: border-box;
+    order: 4;
     width: 83px;
+
+    border-bottom: 1px solid $palette-border-light;
+    border-right: 1px solid $palette-border-light;
+
+    .site-menu__item-content {
+      margin-top: 31px;
+    }
 
     .site-menu__link {
       font-size: 0;
+    }
 
-      &::before {
-        top: -12px;
-        left: 34px;
-      }
+    .site-menu__link-icon {
+      position: absolute;
+      top: 4px;
+      left: 32px;
     }
   }
 
   .site-menu__item--cart {
-    order: 3;
+    order: 5;
 
-    border-style: none;
+    border-bottom: 1px solid $palette-border-light;
 
     .site-menu__item-content {
+      margin-top: 31px;
       margin-left: 32px;
     }
 
     .site-menu__link {
       padding-left: 52px;
+    }
+
+    .site-menu__link-icon {
+      position: absolute;
+      top: 4px;
+      left: 0px;
+    }
+  }
+
+  .site-menu__item--new-arrivals {
+    order: 6;
+    width: 186px;
+
+    .site-menu__item-content {
+      margin-top: 17px;
+    }
+
+    .site-menu__link {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+
+  .site-menu__item--sale {
+    order: 7;
+    width: 633px;
+
+    .site-menu__item-content {
+      margin-top: 17px;
+    }
+
+    .site-menu__link {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+
+  .site-menu__item--shipping {
+    order: 8;
+
+    .site-menu__item-content {
+      margin-top: 17px;
     }
   }
 }

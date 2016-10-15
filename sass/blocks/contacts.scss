@@ -2,10 +2,17 @@
   @include container();
 }
 
+.contacts__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 .contacts__title {
   margin: 0;
 
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   font-size: 18px;
   line-height: 30px;
   color: $palette-text-bold;
@@ -45,6 +52,10 @@
   }
 }
 
+.contacts__link-wrapper {
+  width: 100%;
+}
+
 .contacts__link {
   @include button();
 }
@@ -63,7 +74,7 @@
     padding-bottom: 39px;
   }
 
-  .contacts__header-container {
+  .contacts__info-container {
     @include container-with-padding();
   }
 
@@ -74,12 +85,16 @@
     background-repeat: no-repeat;
   }
 
-  .contacts__footer {
+  .contacts__link-wrapper {
     margin-top: 39px;
   }
 
-  .contacts__footer-container {
+  .contacts__link-container {
     @include container-with-padding();
+  }
+
+  .contacts__link {
+    width: 100%;
   }
 }
 
@@ -89,7 +104,7 @@
     padding-bottom: 57px;
   }
 
-  .contacts__header-container {
+  .contacts__info-container {
     @include container-with-padding();
   }
 
@@ -119,7 +134,7 @@
     background-repeat: no-repeat;
   }
 
-  .contacts__footer {
+  .contacts__link-wrapper {
     margin-top: 55px;
 
     text-align: center;
@@ -127,13 +142,14 @@
 
   .contacts__link {
     display: inline-block;
-    width: 226px;
+    box-sizing: border-box;
+    width: 230px;
 
     vertical-align: top;
   }
 }
 
-@media #{$desktop-only} {
+@media #{$desktop} {
   .contacts {
     padding-top: 71px;
     padding-bottom: 105px;
@@ -144,14 +160,10 @@
   }
 
   .contacts__content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    max-height: 457px;
+    position: relative;
   }
 
-  .contacts__header {
+  .contacts__info {
     width: 350px;
     margin-top: 71px;
     margin-left: 175px;
@@ -179,13 +191,16 @@
     background-repeat: no-repeat;
   }
 
-  .contacts__footer {
+  .contacts__link-wrapper {
+    position: absolute;
+    top: 405px;
+    left: 175px;
+
     width: 350px;
-    margin-top: 48px;
-    margin-left: 175px;
   }
 
   .contacts__link {
-    width: 226px;
+    box-sizing: border-box;
+    width: 230px;
   }
 }

@@ -1,5 +1,6 @@
 $x-palette-black: #000000;
-$x-palette-gray-darker: #444444;
+$x-palette-gray-darkest: #444444;
+$x-palette-gray-darker: #c7c7c7;
 $x-palette-gray-dark: #e5e5e5;
 $x-palette-gray-light: #ececec;
 $x-palette-gray-lighter: #f1f1f1;
@@ -9,18 +10,20 @@ $x-palette-white-almost: #f9f9f9;
 $x-palette-white: #ffffff;
 
 $palette-hero-image-background: $x-palette-white-almost;
+$palette-border-darkest: $x-palette-black;
+$palette-border-darker: $x-palette-gray-darker;
 $palette-border-dark: $x-palette-gray-dark;
-$palette-border-darker: $x-palette-black;
 $palette-border-light: $x-palette-gray-light;
 $palette-primary-dark: $x-palette-green-dark;
 $palette-primary-light: $x-palette-green-light;
 $palette-secondary-dark: $x-palette-gray-lighter;
 $palette-secondary-light: $x-palette-white;
 $palette-text-bold: $x-palette-black;
-$palette-text: $x-palette-gray-darker;
+$palette-text: $x-palette-gray-darkest;
+$palette-text-light: $x-palette-white;
 
-$font-family-bold: "Open Sans Bold", "Arial", sans-serif;
 $font-family: "Open Sans", "Arial", sans-serif;
+$bold-weight: 700;
 
 $retina: "(min-resolution: 1.5dppx)";
 
@@ -29,5 +32,6 @@ $tablet-width: 768px;
 $desktop-width: 1150px;
 
 $mobile-only: "(max-width: #{$tablet-width - 1px})";
+$tablet: "(min-width: #{$tablet-width})";
 $tablet-only: "(min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px})";
-$desktop-only: "(min-width: #{$desktop-width})";
+$desktop: "(min-width: #{$desktop-width})";

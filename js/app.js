@@ -14,3 +14,22 @@ if (siteMenu) {
     });
   }
 }
+
+var modal = document.querySelector('.modal');
+var links = document.querySelectorAll('.product a, .featured-product a');
+var overlay = document.querySelector('.overlay');
+if (modal && links && overlay) {
+  links.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      modal.classList.remove('modal--hidden');
+      overlay.classList.remove('overlay--hidden');
+    });
+  });
+
+  overlay.addEventListener('click', function(event) {
+    event.preventDefault();
+    modal.classList.add('modal--hidden');
+    overlay.classList.add('overlay--hidden');
+  });
+}
