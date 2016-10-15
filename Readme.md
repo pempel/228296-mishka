@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Евгений Пемпель](https://up.htmlacademy.ru/adaptive/8/user/228296).
-* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/id86119).
+* Студент: [Евгений Пемпель](https://up.htmlacademy.ru/adaptive/8/user/228296)
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/id86119)
 
 ---
 
