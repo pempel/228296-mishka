@@ -1,6 +1,4 @@
 .page-header {
-  padding-top: 47px;
-
   background-color: $palette-secondary-dark;
 }
 
@@ -53,6 +51,10 @@
 }
 
 @media #{$mobile-only} {
+  .page-header {
+    padding-top: 17px;
+  }
+
   .page-header--big {
     background-color: $palette-hero-image-background;
     background-image: url("../img/hero-mobile@1x.jpg");
@@ -137,6 +139,8 @@
 
 @media #{$tablet-only} {
   .page-header {
+    padding-top: 47px;
+
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position: 0 208px;
@@ -229,6 +233,8 @@
 
 @media #{$desktop} {
   .page-header {
+    padding-top: 47px;
+
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-position: 0 237px;
