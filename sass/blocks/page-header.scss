@@ -11,7 +11,7 @@
 .page-header__title {
   margin: 0;
 
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   text-align: center;
   color: $palette-text-bold;
 }
@@ -30,7 +30,7 @@
 .page-header__link {
   display: block;
 
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   font-size: 19px;
   line-height: 24px;
   text-decoration: none;

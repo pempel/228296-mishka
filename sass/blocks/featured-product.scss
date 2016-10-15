@@ -11,14 +11,14 @@
 .featured-product__title {
   margin: 0;
 
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   font-size: 25px;
   line-height: 30px;
   color: $palette-text-bold;
 }
 
 .featured-product__subtitle {
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
@@ -54,7 +54,7 @@
 }
 
 .featured-product__price {
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   font-size: 17px;
   line-height: 24px;
   text-align: center;

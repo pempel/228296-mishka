@@ -7,7 +7,7 @@
 .feedback__title {
   margin: 0;
 
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   font-size: 25px;
   line-height: 30px;
   color: $palette-text-bold;
@@ -19,7 +19,7 @@
 }
 
 .feedback__comment-author-name {
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   font-size: 17px;
   line-height: 24px;
   color: $palette-text-bold;

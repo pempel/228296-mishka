@@ -5,7 +5,7 @@
 .about-us__title {
   margin: 0;
 
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   font-size: 25px;
   line-height: 30px;
   color: $palette-text-bold;
@@ -22,7 +22,7 @@
 }
 
 .about-us__item {
-  font-family: $font-family-bold;
+  font-weight: $bold-weight;
   font-size: 17px;
   line-height: 19px;
   color: $palette-text-bold;
