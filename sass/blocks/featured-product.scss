@@ -99,7 +99,7 @@
     margin-top: 29px;
   }
 
-  .featured-product__price {
+  .featured-product__price-wrapper {
     margin-top: 25px;
   }
 
@@ -133,11 +133,11 @@
   }
 
   .featured-product__content {
+    position: relative;
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-between;
-    height: 404px;
     margin-top: 58px;
   }
 
@@ -157,12 +157,16 @@
   .featured-product__photo-wrapper {
     order: 1;
     width: 333px;
+    margin-left: 43px;
+  }
+
+  .featured-product__price-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 
   .featured-product__price {
-    width: 292px;
-    margin-top: 57px;
-
     font-size: 20px;
     line-height: 24px;
   }
@@ -170,7 +174,6 @@
   .featured-product__link {
     box-sizing: border-box;
     width: 292px;
-    margin-left: -2px;
     margin-top: 34px;
   }
 }
@@ -191,6 +194,7 @@
     position: absolute;
     top: 52px;
     left: 47px;
+    z-index: 2;
 
     display: flex;
     flex-direction: row;
@@ -213,6 +217,8 @@
   }
 
   .featured-product__content {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -220,10 +226,13 @@
     height: 636px;
   }
 
+  .featured-product__info {
+    margin-left: 175px;
+  }
+
   .featured-product__description {
     width: 292px;
     margin-top: 158px;
-    margin-left: 175px;
 
     font-size: 17px;
     line-height: 30px;
@@ -232,7 +241,6 @@
   .featured-product__traits {
     width: 292px;
     margin-top: 50px;
-    margin-left: 175px;
   }
 
   .featured-product__photo-wrapper {
@@ -240,11 +248,13 @@
     width: 525px;
   }
 
-  .featured-product__price {
-    width: 292px;
-    margin-top: 112px;
-    margin-left: 175px;
+  .featured-product__price-wrapper {
+    position: absolute;
+    left: 175px;
+    bottom: 0;
+  }
 
+  .featured-product__price {
     font-size: 20px;
     line-height: 24px;
   }
@@ -253,6 +263,5 @@
     box-sizing: border-box;
     width: 292px;
     margin-top: 33px;
-    margin-left: 175px;
   }
 }
